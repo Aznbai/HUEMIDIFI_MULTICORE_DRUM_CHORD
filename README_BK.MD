@@ -5,6 +5,13 @@ HUEMIDIfi development board is a pocket musical IoT device. It produces MIDI dat
 
 MIDI messages broadcasted by the device are generated according to its state, which is continuously monitored and set by all webapp instances. This is achieved via simple POST-request based API.
 
+
+```mermaid
+graph LR
+A[USER: 1 to N] -- http API  Call --> HUEMIDIFI((HUEMIDIfi Dev Board))
+HUEMIDIFI -- state  response -->  A
+HUEMIDIFI -- MIDI <br> Data --> D{MIDI DEVICE:  1 to N}
+```
 HUEMIDIfi is an open and extensible platform that encourages freely shared creativity. This device is an attempt to lower the difficulty threshold for entry into the world of MIDI, an omnipresent technology that is nearly 40 years old. A modifiable, scalable multi-user research platform that introduces the flexibility of the Web2.0-style human-machine interaction to the realm of MIDI — a part of a collaborative vision of the ways human potential can be realized.
 
 HUEMIDIfi allows for a broad range of artistic techniques and approaches sharing a deep historical context, such as Aleatoricism and Musique concrète, serialism and procedural group collaboration in the spirit of John Cage and John Zorn. But most importantly, it offers exceptional accessibility for various electronic musical instruments, multi-user control, interactivity, and a flexibility of interface design.
