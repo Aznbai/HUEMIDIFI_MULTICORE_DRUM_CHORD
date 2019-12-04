@@ -27,7 +27,7 @@ var chordRootNoteTmp = "3"
 var chordRootNoteSymbolMapping = ["C", "G", "D", "A", "E", "B", "F#", "D&#9837;", "A&#9837;", "E&#9837;", "B&#9837;", "F"];
 var chordRootNoteSymbolNormal = ["C", "D&#9837;", "D", "E&#9837;", "E", "F", "F#", "G", "A&#9837;", "A", "B&#9837;", "B"];
 var chordRootNoteOrder = ["3", "10", "5", "0", "7", "2", "9", "4", "11", "6", "1", "8"];
-var chordGridSymbol = ["1/16", "1/8", "1/4", "1/2", "1/1", "2/1", "4/1"];
+var chordGridSymbol = ["1/32", "1/16", "1/8", "1/4", "1/2", "1/1", "2/1", "4/1", "8/1"];
 var chordStepSymbol = ["I", "ii", "iii", "IV", "V", "vi", "vii°"];
 
 var partDiv,

@@ -169,9 +169,11 @@ void handleDrumTiming()
     if (drumTickCurr == 0)
     {
         startCurrNotes();
+                incrementPartPosition();
+
         // stopPrevNotes();
     }
-    if (drumTickCurr >= drumTick[drumTickIndex] - 1)
+    if (drumTickCurr !=0)
     {
         noteOff(drumCh, 60, recalcVelocity());
         noteOff(drumCh, 62, recalcVelocity());
@@ -179,7 +181,6 @@ void handleDrumTiming()
         noteOff(drumCh, 65, recalcVelocity());
         noteOff(drumCh, 66, recalcVelocity());
         noteOff(drumCh, 67, recalcVelocity());
-        incrementPartPosition();
         // startCurrNotes();//
     }
 }

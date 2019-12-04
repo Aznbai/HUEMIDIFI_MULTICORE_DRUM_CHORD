@@ -30,8 +30,8 @@ int arpCh = 3;
 int drumTickCurr = 0;
 int chordTickCurr = 0;
 int drumTick[7] = {5, 11, 23, 47, 95, 191, 383};
-int chordTick[7] = {5, 11, 23, 47, 95, 191, 383};
-int drumTickIndex = 1;
+int chordTick[9] = {5, 11, 23, 47, 95, 191, 383,767,1535};
+int drumTickIndex = 0;
 int chordTickIndex = 4;
 //DRUMS
 char *drumMask[6] = {
